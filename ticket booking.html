@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket Booking</title>
+    
+    <style type="text/css">
+        b1{
+           color:lightgoldenrodyellow;
+            font-size: 30px; 
+             margin: 25px,50px;
+             padding: 10px;
+             text-align: center;
+            border:5px;
+            width: 10%;
+        } 
+         body{
+            font-family: vardana;
+            margin: 15px,30px;
+            font-size: 17px;
+            padding: 5px;
+        }
+us{
+    text-align: right;
+}
+.container{
+            width: 60%;
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid black;
+        }
+         input[type="text"]
+        {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid black;
+            margin: 5px 0px 0px 0px ;
+        }
+        input[id="Payment"] {
+            background-color: lightcyan;
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 8px;
+            text-align: center;
+    </style>
+</head>
+<body>
+<header>
+    <div align="right" style="vertical-align: center; width: 1; background-color: #ccff33 ; height: 80px;">
+        <!--<img align="left" src="logo.jpg" height="100px" width="150px"-->
+    <nav>
+        <button class="b1">Logout</button>
+        <br><br>
+    </nav>
+    </div>
+    <p id="us">Welcome</p>
+    <script type="text/javascript">document.getElementById("username").innerHTML=username;</script>
+</header>
+<main>
+    <center>
+        <div class="container">
+        <h1>Ticket Booking</h1>
+        <form>
+            <p>Enter your User Name:<br>
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            </p>
+            <p>Enter your Id Proof<br>
+            <input type="text" name="id proof" id="id proof" placeholder="AAdhar/PAN/PASSPORT" required>
+            </p>
+            <p>Select your Traveling Source </p>
+             <select>
+        <option value=" Bus">Bus</option>
+        <option value="Train">Train</option>
+        <option value="Flight">Flight</option>
+    </select>
+            <p>Enter your Starting Destination<br>
+            <input type="text" name="Starting Destination" id="Starting Destination" placeholder="Enter your Starting point of destination" required>
+            </p>
+            <p>Enter your Ending Destination<br>
+            <input type="text" name="Ending Destination" id="Ending Destination" placeholder="Enter your Ending point of destination" required>
+            </p>
+            <p>Enter your Starting Journey Date<br>
+            <input type="text" name="date" id="date" placeholder="Enter date of journey" required>
+            </p>
+            <p>Enter your Seat Number<br>
+            <input type="text" name="seat_no" id="seat_no" placeholder="Enter No of seat required" required>
+            </p>
+            <p>Enter your Source Number<br>
+            <input type="text" name="source" id="source" placeholder="Bus/Train/Flight Number" required>
+            </p>
+            <p>Enter your Source Name<br>
+            <input type="text" name="name" id="name" placeholder="Bus/Train/Flight Name" required>
+            </p>
+            <input type="button" name="Payment" id="Payment" value="Payment">
+            <br><br>
+        </form>
+    </div>
+    </center>
+</main>
+</body>
+</html>

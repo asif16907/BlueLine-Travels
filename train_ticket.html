@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlueLine | Train Ticket Booking</title>
+  <style type="text/css">
+    *{
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 20px;]
+            text-align: center;
+            float: right;
+            color: white;
+            font-size: 25px;
+        }
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 15px,30px;
+            font-size: 17px;
+            padding: 5px;
+        }
+.us{
+  right: 10px;
+}
+p{
+    color: #cc5200;
+}
+select{
+    width: 60%;
+    height: 35px;
+}
+.container{
+            width: 50%;
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+         input[type="text"]
+        {
+            width: 60%;
+            padding: 12px;
+            border: 1px solid blue;
+            border-radius: 10px;
+            margin: 5px 0px 0px 0px ;
+        }
+        input[id="Payment"] {
+            background-color: lightcyan;
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        input[id="reset"] {
+            background-color: lightcyan;
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+  </style>
+</head>
+<body>
+    <center>
+
+<nav>
+<img align="left" src="logo.jpg" height="100%" width="150px">
+<a href="index.html" style="color: red;">LOGOUT</a>
+<a href="cancel.html">Cancel Ticket</a>
+<a href="print.html">Print Ticket</a>
+<a href="view.html">View Reservations</a>
+</nav>
+<main>
+       <hr>
+        <div class="container">
+        <h1>Ticket Booking</h1>
+        <form>
+            <p>Select your Traveling Source </p>
+             <select id="Train">
+        <option value=" Train">Train</option>
+    </select>
+            <p>Enter your Starting Destination<br>
+            <select>
+                <option name="select">select</option>
+                <option name="Delhi">Delhi</option>
+                <option name="Mumbai">Mumbai</option>
+                <option name="Gujrat">Gujrat</option>
+                <option name="Chhenai">Chhenai</option>
+                <option name="Kanpur"> Kanpur</option>
+                <option name="Dehradunehra">Dehradun</option>
+                <option name="Howrah">Howrah</option>
+                <option name="Allahabad">Allahabad</option>
+                <option name="Patna">Patna</option>
+                <option name="Bengaluru">Bengaluru</option>
+                <option name="Hyderabad">Hyderabad</option>
+                <option name="Jammu">Jammu</option>
+                <option name="Srinagar'">Srinagar</option>
+            <option name="Nagalandag">Nagaland</option>
+            <option name="TamilNadu">TamilNadu</option>
+            <option name="Varansi">Varansi</option>
+            <option name="Ambala">Ambala</option>
+            <option name="Chandigarh">Chandigarh</option>
+            </select>
+            </p>
+            <p>Enter your Ending Destination<br>
+           <select>
+            <option name="select">select</option>
+                <option name="Delhi">Delhi</option>
+                <option name="Mumbai">Mumbai</option>
+                <option name="Gujrat">Gujrat</option>
+                <option name="Chhenai">Chhenai</option>
+                <option name="Kanpur"> Kanpur</option>
+                <option name="Dehradun">Dehradun</option>
+                <option name="Howrah">Howrah</option>
+                <option name="Allahabad">Allahabad</option>
+                <option name="Patna">Patna</option>
+                <option name="Bengaluru">Bengaluru</option>
+                <option name="Hyderabad">Hyderabad</option>
+                <option name="Jammu">Jammu</option>
+                <option name="Srinagar">Srinagar</option>
+            <option name="Nagaland">Nagaland</option>
+            <option name="TamilNadu">TamilNadu</option>
+            <option name="Varansi">Varansi</option>
+            <option name="Ambala">Ambala</option>
+            <option name="Chandigarh">Chandigarh</option>
+            </select>
+            </p>
+            <p>Enter your Journey Date<br>
+            <input type="Date" name="date" id="date" placeholder="Enter date of journey" required>
+            </p>
+            <p>Enter Number of passenger<br>
+            <input type="text" name="seat_no" id="seat_no" placeholder="Enter No of seat required" required>
+            </p>
+            <p>Enter your Train<br>
+            <select>
+                <option name="select">select</option>
+                <option>DEL-CHN sup EXP</option>
+                <option>MUM-PTN EXP</option>
+                 <option>HOWH-JAMMU EXP</option>
+                 <option>TMD-AMB sup EXP</option>
+                 <option>BNG-DEHRA Gen</option>
+                 <option>SRI-NAG EXP</option>
+                 <option>HOWH-VARANSI EXP</option>
+                 <option>MUM-NAG sup EXP</option>
+                 <option>SRI-CHNGRH Gen</option>
+                 <option>NAG-DEL EXP</option>
+                 <option>TMD-SRI EXP</option>
+                 <option>PTN-HOWH sup EXP</option>
+                 <option>CHNGRH-PTN sup EXP</option>
+            </select>
+            </p>
+            <p>Price per ticket<br>
+            <input type="text" name="name" id="name" placeholder="Bus/Train/Flight Name" required>
+            </p>
+            <p>Total price<br>
+            <input type="text" name="name" id="name" placeholder="Bus/Train/Flight Name" required>
+            </p><br>
+            <input type="button" name="Payment" id="Payment" value="Payment">
+            <input type="button" name="Reset" id="reset" value="Reset">
+            <br><br>
+        </form>
+    </div>
+   </main>
+</center>
+</body>
+</html>

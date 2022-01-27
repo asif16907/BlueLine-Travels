@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">*{
+        box-sizing: border-box;
+    }
+
+    nav {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    nav a {
+        text-decoration: none;
+        padding: 20px;]
+        text-align: center;
+        float: right;
+        color: white;
+        font-size: 25px;
+    }
+
+    body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        margin: 15px,30px;
+        font-size: 17px;
+        padding: 5px;
+    }
+    td{
+border-collapse: collapse;
+border-style: solid;
+border-top: black;
+border-left: black;
+border-right: black;
+border-bottom-width: 1px;
+}
+.tr1, .tr2, .tr3, .tr4{
+border-spacing: 400px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img align="left" src="logo.jpg" height="100%" width="150px">
+            <a href="index.html" style="color: red;">LOGOUT</a>
+            <a href="cancel.html">Cancel Ticket</a>
+            <a href="print.html">Print Ticket</a>
+            <a href="view.html">View Reservations</a>
+        </nav>
+    </div>
+    <h1>PRINT TICKET</h1>
+    <body>
+<h1 style="color: blue;">Ticket Confirmation</h1><hr>
+<h3>Dear "PASSENGER NAME" (User ID),</h3>
+<p>Congratulations! thank you for using BlueLine Travel's online rail reservation facility. Your booking details are indicated below:</p><hr>
+<table >
+<tbody>
+<tr class="tr1"><td><b>PNR No. : </b></td><td>---pnr number---</td><td><b>Train no./Name :</b></td><td>---train no.--/--Name---</td><td><b>Quota :</b></td><td>Tatkal</td></tr>
+<tr class="tr2"><td><b>Transaction Id :</b></td><td>---Tansaction id---</td><td><b>Date and time of booking :</b></td><td>---Date---/---Time---</td><td><b>Class :</b></td><td>Second seating</td></tr>
+<tr class="tr3"><td><b>From :</b></td><td>---from---</td><td><b>Date of Journey :</b></td><td>---date---</td><td><b>To :</b></td><td>---Place---</td></tr>
+<tr class="tr4"><td><b>Boarding At :</b></td><td>---place---</td><td><b>Date of Boarding :</b></td><td>---date---</td><td><b>Scheduled Departure :</b></td><td>---time---</td></tr>
+<tr class="tr5"><td><b>Reservation Up To :</b></td><td>---station name---</td><td><b>Scheduled arrival :</b></td><td>---date---</td><td><b>Passenger :</b></td><td>---number---</td></tr>
+<tr class="tr6"><td><b>Passenger Mobile no. :</b></td><td>---ph no.---</td><td><b>Distance :</b></td><td>---distance(in km)---</td><td><b>Insurance (no. of. passenger):</b></td><td>---number---</td></tr>
+</tbody>
+</table>
+<hr>
+<h1 style="color: blue;">Passenger Details</h1><hr>
+<table>
+<tbody>
+<tr style="background-color: lightgray;">
+<th>SI no.</th><th>Name</th><th>Age</th><th>Gender</th><th>Status</th><th>Coach</th><th>Seat/Berth/WL no</th>
+</tr>
+<!-- Database connect -->
+<tr>
+<td>1</td><td>Name1</td><td>18</td><td>Male</td><td>CNF</td><td>D4</td><td>63</td>
+</tr>
+</tbody>
+</table>.
+<hr>
+<h1 style="color: blue;">Fare Details(inclusive of GST)</h1><hr>
+<table>
+<tbody>
+<tr style="background-color: lightgray;">
+<th>Ticket Fare</th><th>Convience Fee</th><th>Travel Insurance Premium</th><th>Total fare</th>
+</tr>
+<tr>
+<td>Rs. 375.00</td><td>Rs. 11.80</td><td>Rs. 1.05</td><td>Rs. 387.85</td>
+</tr>
+</tbody>
+</table><hr>
+<h1 style="color: bluev;">Must Read</h1><hr>
+<ul type="disc">
+<li>Please a screenshot of Ers i.e Virtual Reservation Message(VRM) OF YOUR TICKET FROM YOUR Booked Tickets History page. You have to carry this VRM or SMS sned to you along with any Govt. authorized ID Card during train journey in original. Both theSMS(or VRM)& original ID will be examined by ticket checking staff on stations/trains for verification purpose.</li>
+<li>This ticket is booked on a personal user ID and can not be sold by an agent. If bought from an agent by any individual. It is at his/her own risk.</li>
+<li>Passengers are advised not to carry inflammable/dangerous/explosive articles as part of their luggage and also to desist from smoking in the trains.</li>
+</ul>
+<h1 style="color: blue;">Customer Care</h1><hr>
+<ul type="disc">
+<li>For any further assistance, please contact us at 24*7 Hrs. Customer Support at ---Phone number---, ---Phone number---</li>
+</ul>
+<p>********************************************************************************************************************************************************************************************************************************************</p>
+<p style="text-align: left;"><b>
+Warm Regards,<br>Customer Care<br>Internet Ticketing<br>IRCTC
+</b></p>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BlueLine | Flight Ticket Booking</title>
+  <style type="text/css">
+    *{
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 20px;]
+            text-align: center;
+            float: right;
+            color: white;
+            font-size: 25px;
+        }
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 15px,30px;
+            font-size: 17px;
+            padding: 5px;
+        }
+.us{
+  right: 10px;
+}
+p{
+    color: #cc5200;
+}
+select{
+    width: 60%;
+    height: 35px;
+}
+.container{
+            width: 50%;
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+         input[type="text"]
+        {
+            width: 60%;
+            padding: 12px;
+            border: 1px solid blue;
+            border-radius: 10px;
+            margin: 5px 0px 0px 0px ;
+        }
+        input[id="Payment"] {
+            background-color: lightcyan;
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        input[id="reset"] {
+            background-color: lightcyan;
+            width: 40%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+  </style>
+</head>
+<body>
+    <center>
+<!--header>
+    <div align="right" style="vertical-align: center; width: 1; background-color: #ccff33 ; height: 80px;">
+        <<img align="left" src="logo.jpg" height="100px" width="150px">
+    <nav>
+        <button class="b1">Logout</button>.
+        <p id="blt">Blueline Travels</p>
+        <br><br>
+    </nav>
+    </div>
+   <div align="right">Welcome</div>
+    <script type="text/javascript">document.getElementById("username").innerHTML=username;</script>
+</header-->
+<nav>
+<img align="left" src="logo.jpg" height="100%" width="150px">
+<a href="index.html" style="color: red;">LOGOUT</a>
+<a href="cancel.html">Cancel Ticket</a>
+<a href="print.html">Print Ticket</a>
+<a href="view.html">View Reservations</a>
+</nav>
+<main>
+    <hr>
+        <div class="container">
+        <h1>Ticket Booking</h1>
+        <form>
+            <p>Select your Traveling Source </p>
+             <select id="Flight">
+        <option name=" Flight">Flight</option>
+    </select>
+            <p>Enter your Starting Destination<br>
+            <select>
+                <option name="select">select</option>
+                <option name="Delhi">Delhi</option>
+                <option name="Mumbaium">Mumbai</option>
+                <option name="Gujrat">Gujrat</option>
+                <option name="Chhenai">Chhenai</option>
+                <option name="Patna">Patna</option>
+                <option name="Bengaluru">Bengaluru</option>
+                <option name="Hyderabad">Hyderabad</option>
+                <option name="Jammu">Jammu</option>
+                <option name="Srinagar">Srinagar</option>
+            <option name="Chandigarh">Chandigarh</option>
+            </select>
+            </p>
+            <p>Enter your Ending Destination<br>
+           <select>
+                <option name="Delhi">Delhi</option>
+                <option name="Mumbai">Mumbai</option>
+                <option name="Gujrat">Gujrat</option>
+                <option name="Chhenai">Chhenai</option>
+                <option name="Patna">Patna</option>
+                <option name="Bengaluru">Bengaluru</option>
+                <option name="Hyderabad">Hyderabad</option>
+                <option name="Jammu">Jammu</option>
+                <option name="Srinagar">Srinagar</option>
+            <option name="Chandigarhngrh">Chandigarh</option>
+            </select>
+            </p>
+            <p>Enter your Journey Date<br>
+            <input type="Date" name="date" id="date" placeholder="Enter date of journey" required>
+            </p>
+            <p>Enter Number of passenger<br>
+            <input type="text" name="seat_no" id="seat_no" placeholder="Enter No of seat required" required>
+            </p>
+            <p>Enter your Flight<br>
+            <select>
+                <option name="select">select</option>
+                <option>IndiGo Delhi-3345</option>
+                <option>Air India Mumbai-1009</option>
+                 <option>SpiceJet Gujrat-7829</option>
+                 <option>Go First Patna-2022</option>
+                 <option>AirAsia India Chhenai-9374</option>
+                 <option>Vistara Bengluru-5363</option>
+                 <option>TruJet Hyderabad-2938</option>
+                 <option>Alliance Air Jammu-5473</option>
+                 <option>KingFisher Srinagar-5732</option>
+                 <option> Emirates Chandigarh-2004</option>
+            </select>
+            </p>
+            <p>Price per ticket<br>
+            <input type="text" name="name" id="name"  required>
+            </p>
+            <p>Total price<br>
+            <input type="text" name="name" id="name"  required>
+            </p><br>
+            <input type="button" name="Payment" id="Payment" value="Payment">
+            <input type="button" name="Reset" id="reset" value="Reset">
+            <br><br>
+        </form>
+    </div>
+   </main>
+</center>
+</body>
+</html>

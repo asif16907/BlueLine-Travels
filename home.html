@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BlueLine | Home</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+nav {
+background-color: #333;
+overflow: hidden;
+}
+
+nav a {
+text-decoration: none;
+padding: 20px;
+text-align: center;
+float: right;
+color: white;
+font-size: 25px;
+}
+
+		body{
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+			margin: 15px,30px;
+			font-size: 17px;
+			padding: 5px;
+		}
+		img{
+			border: 2px solid black;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+		.container__main {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.container_bus {
+			width: 30%;
+		}
+
+		.container_train {
+			width: 30%;
+		}
+
+		.container_flight {
+			width: 30%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container_bus {
+			position: relative;
+			width: 50%;
+		}
+
+		.b_image {
+			display: block;
+			width: 90%;
+			height: 100%;
+		}
+
+		.b_over {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 90%;
+			opacity: 0;
+			transition: 0.5s ease;
+			background-color: #f2f2f2;
+			border: 2px solid black;
+		}
+
+		.container_bus:hover .b_over {
+			opacity: 0.8;
+		}
+
+		.b_text {
+			color: white;
+			font-size: 30px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		.container_train {
+			position: relative;
+			width: 50%;
+		}
+
+		.t_image {
+			display: block;
+			width: 90%;
+			height: 100%;
+		}
+
+		.t_over {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 90%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: #f2f2f2;
+			border: 2px solid black;
+		}
+
+		.container_train:hover .t_over {
+			opacity: 0.8;
+		}
+
+		.t_text {
+			color: white;
+			font-size: 30px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		.container_flight {
+			position: relative;
+			width: 50%;
+		}
+
+		.f_image {
+			display: block;
+			width: 90%;
+			height: 100%;
+		}
+
+		.f_over {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 90%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: #f2f2f2;
+			border: 2px solid black;
+		}
+
+		.container_flight:hover .f_over {
+			opacity: 0.8;
+		}
+
+		.f_text {
+			color: white;
+			font-size: 30px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		
+			
+			<nav>
+			<img align="left" src="logo.jpg" height="100%" width="150px">
+			<a href="index.html" style="color: red;">LOGOUT</a>
+			<a href="cancel.html">Cancel Ticket</a>
+			<a href="print.html">Print Ticket</a>
+			<a href="view.html">View Reservations</a>
+		</nav>
+		</div>
+	</header>
+	<br>
+	<h3 align="right" >Welcome, Username</h3>
+	<h1>What We Offer</h1>
+	<div>
+		<main class="container__main">
+			<div class="container_bus">
+				<img src="bus.jfif" alt="bus" class="b_image" width="90%" height="100%">
+				<div class="b_over">
+					<div class="b_text"><a href="bus_ticket.html">Bus Ticket Booking</a></div>
+				</div>
+			</div>
+
+			<div class="container_train">
+				<img src="train.jpg" alt="train" class="t_image" width="90%" height="300px">
+				<div class="t_over">
+					<div class="t_text"><a href="train_ticket.html">Train Ticket Booking</a></div>
+				</div>
+			</div>
+
+			<div class="container_flight">
+				<img src="flight.jfif" alt="flight" class="f_image" width="90%" height="300px">
+				<div class="f_over">
+					<div class="f_text"><a href="flight_ticket.html">Flight Ticket Booking</a></div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
